@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>Frontend Mentor | News homepage</title>
+  </head>
+  <body>
+    <div class="container">
+      <div id="dark-bg"></div>
+      <header>
+        <nav>
+          <ul class="navbar">
+            <li class="logo">
+              <a href="#"><img src="./assets/images/logo.svg" /></a>
+            </li>
+            <input type="checkbox" id="check" />
+            <span class="menu">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">New</a></li>
+              <li><a href="#">Popular</a></li>
+              <li><a href="#">Trending</a></li>
+              <li><a href="#">Categories</a></li>
+              <label for="check" id="close-menu"
+                ><i class="fas fa-times"></i
+              ></label>
+            </span>
+            <label for="check" id="open-menu"
+              ><i class="fas fa-bars"></i
+            ></label>
+          </ul>
+        </nav>
+      </header>
+      <div class="grid-layout">
+        <div class="first-layout">
+          <picture>
+            <source
+              media="(min-width: 768px)"
+              srcset="./assets/images/image-web-3-desktop.jpg"
+              type="image/jpg"
+            />
+            <source
+              media="(max-width: 767px)"
+              srcset="./assets/images/image-web-3-mobile.jpg"
+              sizes="image/jpg"
+            />
+            <img src="./assets/images/image-web-3-desktop.jpg" alt="web3" />
+          </picture>
+        </div>
+        <div class="second-layout">
+          <h2>New</h2>
+          <strong><a href="#">Hydrogen VS Electric Cars</a></strong>
+          <p class="short-para">
+            Will hydrogen-fueled cars ever catch up to EVs?
+          </p>
+          <div class="hr"></div>
+          <strong><a href="#">Downsides of AI Artistry</a></strong>
+          <p class="short-para">
+            What are the possible adverse effects of on-demand AI image
+            generation?
+          </p>
+          <div class="hr"></div>
+          <strong><a href="#">Is VC Funding Drying Up?</a></strong>
+          <p class="short-para">
+            Private funding by VC firms is down 50% YOY.We take a look at what
+            that means.
+          </p>
+        </div>
+        <div class="third-layout">
+          <h1>The Bright Future of Web 3.0?</h1>
+        </div>
+        <div class="fourth-layout">
+          <p class="main-para">
+            We dive into the next evolution of the web that claims to put the
+            power of the platforms back into the hands of the people. But is it
+            really fulfilling its promise?
+          </p>
+          <button>Read more</button>
+        </div>
+      </div>
+      <div class="three-col-flex">
+        <div class="col-one">
+          <div class="img-flex">
+            <img src="./assets/images/image-retro-pcs.jpg" />
+          </div>
+          <div class="text-flex">
+            <h3>01</h3>
+            <h4><a href="#">Reviving Retro PCs</a></h4>
+            <p>What happens when old PCs are given modern upgrades?</p>
+          </div>
+        </div>
+        <div class="col-two">
+          <div class="img-flex">
+            <img src="./assets/images/image-top-laptops.jpg" />
+          </div>
+          <div class="text-flex">
+            <h3>02</h3>
+            <h4><a href="#">Top 10 Laptops of 2022</a></h4>
+            <p>Our best picks for various needs and budgets.</p>
+          </div>
+        </div>
+        <div class="col-three">
+          <div class="img-flex">
+            <img src="./assets/images/image-gaming-growth.jpg" />
+          </div>
+          <div class="text-flex">
+            <h3>03</h3>
+            <h4><a href="#">The Growth of Gaming</a></h4>
+            <p>How the pandemic has sparked fresh opportunities.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
